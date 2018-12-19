@@ -4,11 +4,23 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "build",
+            "taskName": "buildrunluafile",
             "type": "shell",
             "command": "g++",
             "args": [
-                "-o", "example", "-I /usr/include", "luaexam.cpp", "-llua", "-ldl"
+                "-o", "runluafile.exe", "-I /usr/include", "runluafile.cpp", "-llua", "-ldl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "taskName": "buildluainterpreter",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "luainterpreter.exe", "-I /usr/include", "luainterpreter.cpp", "-llua", "-ldl"
             ],
             "group": {
                 "kind": "build",
