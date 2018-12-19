@@ -15,7 +15,7 @@ int main() {
     lua_pushstring(L, "Overwatch");
     lua_pushstring(L, "Paladins");
     lua_pcall(L, 2, 1, 0);
-    std::cout << lua_tostring(L, -1) <<std::endl;
+    std::cout << lua_tostring(L, -1) << std::endl;
     lua_pop(L, 1);
     lua_close(L);
 }
