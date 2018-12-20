@@ -38,6 +38,18 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "taskName": "callcfunction",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "callpushedcfunction.exe", "-I /usr/include", "callpushedcfunction.cpp", "-llua", "-ldl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
