@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-o", "runluafile.exe", "-I /usr/include", "runluafile.cpp", "-llua", "-ldl"
+                "-o", "runluafile.exe", "-I /usr/include/luajit-2.0", "RunLuaFileinC/runluafile.cpp", "-llua", "-ldl"
             ],
             "group": {
                 "kind": "build",
@@ -20,7 +20,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-o", "luainterpreter.exe", "-I /usr/include", "luainterpreter.cpp", "-llua", "-ldl"
+                "-o", "luainterpreter.exe", "-I /usr/include/luajit-2.0", "LuaInterpreterinC/luainterpreter.cpp", "-llua", "-ldl"
             ],
             "group": {
                 "kind": "build",
@@ -32,7 +32,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-o", "callluafunction.exe", "-I /usr/include", "callluafunction.cpp", "-llua", "-ldl"
+                "-o", "callluafunction.exe", "-I /usr/include/luajit-2.0", "CallLuaFunctioninC/callluafunction.cpp", "-llua", "-ldl"
             ],
             "group": {
                 "kind": "build",
@@ -44,7 +44,7 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "-o", "callpushedcfunction.exe", "-I /usr/include", "callpushedcfunction.cpp", "-llua", "-ldl"
+                "-o", "callpushedcfunction.exe", "-I /usr/include/luajit-2.0d", "CallCFunctioninLua/callpushedcfunction.cpp", "-llua", "-ldl"
             ],
             "group": {
                 "kind": "build",
