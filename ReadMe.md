@@ -21,6 +21,6 @@ Unfinished and untested, but suppose be able to generate a DLL or SO from the C+
 
 # Requires
 Environment built and tested in:
-- Lua 5.1.4
-- lua-devel 5.1.4
+- LuaJIT 2.0.4
+- luajit-devel 2.0.4
 - gcc 4.8.5
